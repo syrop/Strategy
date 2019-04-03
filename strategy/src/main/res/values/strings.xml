@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <!-- First fragment. -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="first_fragment_prompt">This text is [emphasis].</string>
+    <string name="first_fragment_replacement">bold</string>
+
+    <!-- Second fragment. -->
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="second_fragment_prompt">This text is [emphasis].</string>
+    <string name="second_fragment_replacement">italic</string>
+</resources>
