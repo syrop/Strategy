@@ -25,7 +25,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import kotlinx.android.synthetic.main.fr_bold.*
 import pl.org.seva.myapplication.R
-import pl.org.seva.myapplication.main.extension.emphasis
+import pl.org.seva.myapplication.main.extension.emphasize
 import pl.org.seva.myapplication.main.extension.inflate
 import pl.org.seva.myapplication.main.extension.nav
 import pl.org.seva.myapplication.main.kodein.MutableKodeinAware
@@ -40,7 +40,7 @@ class BoldFragment : Fragment(), MutableKodeinAware {
         super.onActivityCreated(savedInstanceState)
         kodein.addImport(Bold.MODULE, true)
         text.text = getString(R.string.bold_fragment_prompt)
-                .emphasis(PLACEHOLDER, getString(R.string.bold_fragment_replacement))
+                .emphasize(PLACEHOLDER, getString(R.string.bold_fragment_replacement))
         next_fab.setOnClickListener { nav(R.id.action_firstFragment_to_italicFragment) }
     }
 

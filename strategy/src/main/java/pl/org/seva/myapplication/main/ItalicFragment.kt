@@ -25,7 +25,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import kotlinx.android.synthetic.main.fr_italic.*
 import pl.org.seva.myapplication.R
-import pl.org.seva.myapplication.main.extension.emphasis
+import pl.org.seva.myapplication.main.extension.emphasize
 import pl.org.seva.myapplication.main.extension.inflate
 import pl.org.seva.myapplication.main.kodein.MutableKodeinAware
 import pl.org.seva.myapplication.strategy.Italic
@@ -39,7 +39,7 @@ class ItalicFragment : Fragment(), MutableKodeinAware {
         super.onActivityCreated(savedInstanceState)
         kodein.addImport(Italic.MODULE, true)
         text.text = getString(R.string.italic_fragment_prompt)
-                .emphasis(PLACEHOLDER, getString(R.string.italic_fragment_replacement))
+                .emphasize(PLACEHOLDER, getString(R.string.italic_fragment_replacement))
     }
 
     companion object {
