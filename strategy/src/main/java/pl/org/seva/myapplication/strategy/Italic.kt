@@ -28,7 +28,7 @@ import org.kodein.di.generic.bind
 import org.kodein.di.generic.singleton
 
 class Italic : Emphasis {
-    override fun emphasis(str: String, placeholder: String, replacement: String): CharSequence {
+    override fun emphasize(str: String, placeholder: String, replacement: String): CharSequence {
         val idName = str.indexOf(placeholder)
         val idEndName = idName + replacement.length
         val boldSpan = StyleSpan(Typeface.ITALIC)
